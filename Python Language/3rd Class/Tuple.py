@@ -55,3 +55,21 @@ t = (1, [2, 3], 4)
 t[1][0] = 99
 
 print(t)#(1, [99, 3], 4)
+
+# 7. Write a Python program that takes a list of tuples (e.g., [("a", 1), ("b", 2)]) and converts it into a dictionary.
+# Ans : 
+list_tuple = [("a", 1), ("b", 2), ("c", 3)]
+
+convert_dic = dict(list_tuple)
+print(list_tuple)#[('a', 1), ('b', 2), ('c', 3)]
+print(convert_dic)#{'a': 1, 'b': 2, 'c': 3}
+
+
+# 8. Given a nested tuple like ((1,2), (3,4), (5,6)), write a program to flatten it into a single tuple (1,2,3,4,5,6).
+# Ans :
+nasted_tuple = ((1,2), (3,4), (5,6))
+
+flatten_tuple = sum(nasted_tuple, ())
+
+print(nasted_tuple)#((1, 2), (3, 4), (5, 6))
+print(flatten_tuple)#(1, 2, 3, 4, 5, 6)

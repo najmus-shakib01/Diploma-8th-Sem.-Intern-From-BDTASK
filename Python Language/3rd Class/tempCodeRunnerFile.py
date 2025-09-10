@@ -1,3 +1,19 @@
-my_tuple = (10, 20, 30)
-my_list = list(my_tuple)
-print(my_list)
+students = {
+    'Rahim' :{
+        'Subjects' : {
+            'Math' : 85,
+            'Englis' : 78,
+            'Science' : 92
+        }
+    },
+    'Karim' : {
+        'Subjects':{
+            'Bangla' : 75,
+            'Agricalture' : 88,
+            'Networking' : 80
+        }
+    }
+}
+
+print(students['Rahim']['Subjects'])
+print(students['Karim']['Subjects'])
